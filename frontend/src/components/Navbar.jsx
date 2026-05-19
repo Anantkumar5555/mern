@@ -8,16 +8,15 @@ const Navbar = () => {
 
   const navLinks = [
     { path: '/', label: 'Dashboard' },
-    { path: '/candidates', label: 'All Candidates' },
-    { path: '/add', label: 'Add Candidate' },
-    { path: '/match', label: 'AI Shortlist' }
+    { path: '/add', label: 'Register Complaint' },
+    { path: '/complaints', label: 'Manage Complaints' }
   ];
 
   return (
     <nav className="navbar glass-panel" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
       <div className="navbar-brand">
-        <span className="brand-icon">✨</span>
-        <span className="brand-text">TalentAI</span>
+        <span className="brand-icon">🛡️</span>
+        <span className="brand-text">CivicSmart AI</span>
       </div>
       <div className="navbar-links">
         {navLinks.map((link) => (
